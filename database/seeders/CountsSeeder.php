@@ -14,7 +14,7 @@ class CountsSeeder extends Seeder
      */
     public function run()
     {
-        Count::insert([
+        Count::create([
             'created' => 0,
             'deleted' => 0,
             'visited' => 0,

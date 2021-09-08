@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Url;
 use Database\Seeders\UrlSeeder;
 use Illuminate\Database\Seeder;
 use Database\Seeders\CountsSeeder;
@@ -15,11 +16,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // örnek veriler
-        
+        Url::factory()->count(20)->create();
+
         $this->call([
-            CountsSeeder::class, 
-            UrlSeeder::class
+            CountsSeeder::class,
         ]);
     }
 }
