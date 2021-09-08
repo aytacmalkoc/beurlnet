@@ -86,15 +86,15 @@
 
     <div id="app">
 
-        @include('layouts.shared.header')
+        @include('web.layouts.shared.header')
 
-    
+
 
         @yield('content')
 
-    
 
-        @include('layouts.shared.footer')
+
+        @include('web.layouts.shared.footer')
 
     </div>
 

@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('web.layouts.master')
 
 @section('title', 'Bağlantı Bulunamadı.')
 
@@ -22,5 +22,5 @@
         </div>
     </div>
 </section>
-    
+
 @endsection

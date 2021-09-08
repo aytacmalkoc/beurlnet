@@ -16,15 +16,15 @@
         </div>
 
         <div class="row justify-content-center">
-            @if ($public_links->count() == 0)
-            <div class="col-6 mt-4 pt-2 text-center">
-                <div class="alert alert-warning">
-                    Henüz herkese açık paylaşılan bir bağlantı yok.
+            @if ($urls->count() == 0)
+                <div class="col-6 mt-4 pt-2 text-center">
+                    <div class="alert alert-warning">
+                        Henüz herkese açık paylaşılan bir bağlantı yok.
+                    </div>
                 </div>
-            </div>
             @endif
 
-            <public-links :links={{ $public_links }} />
+            <public-links :links={{ $urls }} />
         </div>
     </div>
 </section>

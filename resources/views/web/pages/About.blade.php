@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('web.layouts.master')
 
 @section('title', 'beurl.net nedir?')
 
@@ -15,22 +15,23 @@
                 </p>
                 <p class="para-desc mx-auto text-muted">
                     Örneğin dribbble.com üzerinden bir bağlantı kopyaladığımızı varsayalım.
-                    Websitelerinde kullanılan filtreleme teknolojileri nedeniyle elimizde 
-                    <a href="https://dribbble.com/shots/popular/made_with/sketch?source_file=.sketch">https://dribbble.com/shots/popular/made_with/sketch?source_file=.sketch</a> 
+                    Websitelerinde kullanılan filtreleme teknolojileri nedeniyle elimizde
+                    <a href="https://dribbble.com/shots/popular/made_with/sketch?source_file=.sketch">https://dribbble.com/shots/popular/made_with/sketch?source_file=.sketch</a>
                     şeklinde uzun bir bağlantı olacaktır.
                 </p>
                 <p class="para-desc mx-auto text-muted">
-                    beurl, bu uzun bağlantıları kısaltarak sizi bu çirkin görüntüden kurtarır. Kısalttığınız bağlantıyı 
-                    <span class="text-success">16</span> karakter uzunluğuna sabitleyerek paylaşılabilir bir bağlantı oluşturur.
+                    beurl, bu uzun bağlantıları kısaltarak sizi bu çirkin görüntüden kurtarır. Kısalttığınız bağlantıyı
+                    <span class="text-success">16</span> karakter uzunluğuna sabitleyerek paylaşılabilir bir bağlantı
+                    oluşturur.
                 </p>
                 <p class="para-desc mx-auto text-muted">
                     Şimdi yukarıda örneğini verdiğimiz bağlantıyı beurl tekniği ile kısaltalım.
-                    Görüldüğü gibi elimizde oldukça kısa ve temiz bir bağlantı oluştu. 
+                    Görüldüğü gibi elimizde oldukça kısa ve temiz bir bağlantı oluştu.
                     <a href="https://beurl.net/THoT1FJV" class="text-success" target="_blank">beurl.net/THoT1FJV</a>
                 </p>
                 <p class="para-desc mx-auto text-muted">
-                    Ayrıca kısalttığınız bağlantıları herkese açık bir şekilde paylaşabilir ya da gizli tutabilirsiniz. 
-                    Paylaşılmasına izin vermediğiniz hiçbir bağlantı paylaşılmayacaktır. İzin verdiğiniz bağlantılar ise 
+                    Ayrıca kısalttığınız bağlantıları herkese açık bir şekilde paylaşabilir ya da gizli tutabilirsiniz.
+                    Paylaşılmasına izin vermediğiniz hiçbir bağlantı paylaşılmayacaktır. İzin verdiğiniz bağlantılar ise
                     anasayfamızda herkese açık şekilde görüntülenecektir.
                 </p>
             </div>
