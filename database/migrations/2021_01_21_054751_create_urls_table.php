@@ -15,9 +15,11 @@ class CreateUrlsTable extends Migration
     {
         Schema::create('urls', function (Blueprint $table) {
             $table->id();
-            $table->string('url');
-            $table->string('short_url');
-            $table->boolean('public')->default(false);
+            $table->longText('original');
+            $table->longText('shortened')->unique();
+            $table->longText('full_url')->unique();
+            $table->boolean('visible')->default(false);
+            $table->dateTime('deleted_at')->default(\Illuminate\Support\Facades\DB::raw('DATE_ADD(NOW(), INTERVAL 1 DAY)'));
             $table->timestamps();
         });
     }
