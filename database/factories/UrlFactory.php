@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Url;
+use Hidehalo\Nanoid\Client;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class UrlFactory extends Factory
@@ -21,8 +22,14 @@ class UrlFactory extends Factory
      */
     public function definition()
     {
+        $client = new Client();
+        $nano = $client->generateId(8);
+
         return [
-            //
+            'original' => $this->faker->url,
+            'shortened' => $nano,
+            'full_url' => \url($nano),
+            'visible' => rand(0, 1)
         ];
     }
 }
