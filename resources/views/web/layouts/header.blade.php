@@ -2,7 +2,7 @@
     <div class="container">
         <div>
             <a class="logo" href="{{ route('homepage') }}">
-                <img src="{{ asset('assets/images/beurl-logo.png') }}" height="24" alt="" />
+                <img src="{{ asset('assets/images/beurl-logo.png') }}" height="28" alt=""/>
             </a>
         </div>
 
